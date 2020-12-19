@@ -11,5 +11,5 @@ if (!parseInt(num)) {
 		if (NumPow > num) break;
 		result += i + ' '; 
 	} 
-	alert(`Number is: ${result}`);
+	alert(`Square these numbers: ${result} does not exceed ${num}`);
 } 

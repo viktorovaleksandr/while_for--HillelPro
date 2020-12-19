@@ -3,6 +3,7 @@
 let numMax = 30;
 let numMin = 20;
 let numStep = '';
+
 for(let i = numMin; i <= numMax; i = i+0.5) {
 	i === numMin ? numStep += i + ' ':
    i === numMax ? numStep += i: 

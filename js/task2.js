@@ -10,4 +10,4 @@ if (!parseInt(exchangeAmount)) {
 		exchangeResult = dollarRate * i;
 		console.log(`${i}$ = ${exchangeResult}грн`);
 	}
-} 
+} alert(`Summ ${exchangeAmount}$ it turns out: ${exchangeResult}грн`);
