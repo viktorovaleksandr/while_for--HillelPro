@@ -1,7 +1,8 @@
 // Дано целое число. Вывести все целые числа от 1 до 100, квадрат которых не превышает числа которое ввёл пользователь. 
 
-let num = +prompt('Enter any number',100); 
+let num = +prompt('Enter any number',80); 
 let result = '';
+
 if (!parseInt(num)) {
 	alert('Incorrect input');
 } else {

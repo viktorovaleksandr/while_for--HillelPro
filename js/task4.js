@@ -2,14 +2,16 @@
 
 let num = +prompt('Enter any number',5);
 let numPrime = true;
+
 if (!parseInt(num)) {
 	alert('Incorrect input');
 } else {
 	for (let i = 2; i < num; i++) {
 		if (num % i === 0) {
 			numPrime = false;
-			break; 
 		} 
 	} 
 	alert(`Number ${num} prime - ${numPrime}`);
 } 
+ 
+
