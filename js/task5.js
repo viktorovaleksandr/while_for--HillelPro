@@ -5,8 +5,12 @@ let num = +prompt('Enter any number',10);
 if (!parseInt(num)) {
 	alert('Incorrect input');
 } else {
-	const result = (num % 3 === 0)?
-	num /= 3:
-	num == 1;
-	alert(result);
+	while (num % 3 === 0) {
+		num /= 3;
+	}
+	if (num === 1) {
+			alert("This number fits");
+		} else {
+			alert("This number does not fit");
+	}
 }
