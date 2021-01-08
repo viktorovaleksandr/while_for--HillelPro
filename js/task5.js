@@ -1,14 +1,14 @@
 // Дано некоторое число. Определить, можно ли получить это число путем возведения числа 3 в некоторую степень. (Например, числа 9, 81 можно получить, а 13 - нельзя).
-const num = +prompt('Enter any number',10);
+const EnterNumber = parseInt(prompt('Enter any number',10));
 
-for (let i = 1; Math.pow(3,i); i++) {
- 	if (Math.pow(3,i) !== num && Math.pow(3,i) > num) {
- 		resultPow = `This number does not fit`;
- 		alert(resultPow);
+for (let i = 1;i <= EnterNumber; i++) {
+	const mathPowNumber = Math.pow(3, i);
+
+ 	if (mathPowNumber > EnterNumber) {
+ 		console.log(`${EnterNumber} cannot raise to the power of 3`);
  		break;
- 	} else if (Math.pow(3,i) === num) {
- 		const resultPow = `3 power ${i} is equal ${num}`;
- 		alert(resultPow);
+ 	} else if (mathPowNumber === EnterNumber) {
+ 		console.log(`${EnterNumber} can be raising the number 3 to the power of ${i}`);
  		break;
  	}
 }

@@ -1,8 +1,8 @@
 // Один доллар стоит 30 гривен. Вывести данные с расчетом стоимости 10, 20, 30... 100 долларов.
-const exchangeAmount = +prompt('Enterenter the exchange amount',100);
-let dollarRate = 30;
+const exchangeAmount = parseInt(prompt('Enterenter the exchange amount',100));
+const dollarRate = 30;
 
-for ( i = 10; i <= exchangeAmount; i += 10) {
+for ( let i = 10; i <= exchangeAmount; i += 10) {
 	const resultExchange = dollarRate * i;
-	alert(`${i}$ = ${resultExchange}грн`);
+	console.log(`${i}$ = ${resultExchange}грн`);
 } 

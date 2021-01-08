@@ -2,7 +2,6 @@
 let numStep = '';
 
 for(let i = 20; i <= 30; i += 0.5) {
-   i === 30 ? numStep += i: 
-   numStep += i + ' '; 
+   numStep += i === 30 ? i : `${i} `; 
 }
-console.log(`${numStep} `);
+console.log(`Numbers from 20 to 30 with step 0.5: ${numStep} `);
